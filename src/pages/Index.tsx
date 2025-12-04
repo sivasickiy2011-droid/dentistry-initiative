@@ -37,7 +37,7 @@ const Index = () => {
             </div>
             <div className="relative h-full">
               <img 
-                src="https://cdn.poehali.dev/files/94cd1485-b44e-4309-a28a-9305c8518aab.jpg"
+                src="https://cdn.poehali.dev/files/bca9b4b6-073c-4990-8abc-3b2b0f62f24a.jpg"
                 alt="Стоматологическое лечение"
                 className="w-full h-full object-cover object-center"
               />
