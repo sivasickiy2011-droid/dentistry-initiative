@@ -37,9 +37,9 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://cdn.poehali.dev/files/8f4ed8de-9619-4619-adcb-dc4aee427d16.jpg"
+                src="https://cdn.poehali.dev/files/e43e4f20-46cd-44f9-a272-8384a189014e.jpg"
                 alt="Стоматологическое лечение"
-                className="w-full h-auto rounded-3xl"
+                className="w-full h-auto rounded-3xl shadow-2xl"
               />
             </div>
           </div>
@@ -116,7 +116,7 @@ const Index = () => {
             <Card className="border-none shadow-lg rounded-3xl overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/files/6437e4ee-1664-4079-a40f-3338f237e435.jpg"
+                  src="https://cdn.poehali.dev/files/cbd3c67e-84bd-4b23-8e42-67f33b44ef7a.jpg"
                   alt="Диагностика полости рта"
                   className="w-full h-full object-cover"
                 />
@@ -136,7 +136,7 @@ const Index = () => {
             <Card className="border-none shadow-lg rounded-3xl overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/files/6437e4ee-1664-4079-a40f-3338f237e435.jpg"
+                  src="https://cdn.poehali.dev/files/cffd8737-220a-4ee1-a915-bcfd9504f9d6.png"
                   alt="План лечения"
                   className="w-full h-full object-cover"
                 />
@@ -156,7 +156,7 @@ const Index = () => {
             <Card className="border-none shadow-lg rounded-3xl overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/files/6437e4ee-1664-4079-a40f-3338f237e435.jpg"
+                  src="https://cdn.poehali.dev/files/b52bc65e-d601-4cc1-8bec-47d8a498ea36.png"
                   alt="Профессиональная гигиена"
                   className="w-full h-full object-cover"
                 />
