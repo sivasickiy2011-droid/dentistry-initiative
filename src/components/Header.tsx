@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
-import BookingDialog from '@/components/BookingDialog';
 
 interface Doctor {
   name: string;
@@ -22,33 +21,66 @@ interface HeaderProps {
   services: Service[];
 }
 
-const Header = ({ scrollToSection, doctors, services }: HeaderProps) => {
+const Header = ({ scrollToSection }: HeaderProps) => {
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
-      <div className="container mx-auto px-4 py-4">
+    <header className="bg-white py-4 px-6 shadow-sm">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Icon name="Heart" size={28} className="text-primary" />
-            <span className="text-xl font-bold text-foreground">Здоровая улыбка</span>
+          <div className="flex items-center gap-4">
+            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+              <div className="text-white text-center">
+                <div className="text-xs font-semibold uppercase leading-tight">семейный</div>
+                <div className="text-xs font-semibold uppercase leading-tight">доктор</div>
+              </div>
+            </div>
+            <div>
+              <div className="text-primary text-lg font-semibold">Стоматологическая</div>
+              <div className="text-primary text-lg font-semibold">клиника</div>
+            </div>
           </div>
-          <div className="hidden md:flex space-x-6">
-            <button onClick={() => scrollToSection('hero')} className="text-sm font-medium hover:text-primary transition-colors">Главная</button>
-            <button onClick={() => scrollToSection('about')} className="text-sm font-medium hover:text-primary transition-colors">О клинике</button>
-            <button onClick={() => scrollToSection('services')} className="text-sm font-medium hover:text-primary transition-colors">Услуги</button>
-            <button onClick={() => scrollToSection('doctors')} className="text-sm font-medium hover:text-primary transition-colors">Врачи</button>
-            <button onClick={() => scrollToSection('gallery')} className="text-sm font-medium hover:text-primary transition-colors">Галерея</button>
-            <button onClick={() => scrollToSection('prices')} className="text-sm font-medium hover:text-primary transition-colors">Цены</button>
-            <button onClick={() => scrollToSection('reviews')} className="text-sm font-medium hover:text-primary transition-colors">Отзывы</button>
-            <button onClick={() => scrollToSection('contacts')} className="text-sm font-medium hover:text-primary transition-colors">Контакты</button>
+
+          <div className="hidden lg:flex items-center gap-8">
+            <div className="text-center">
+              <div className="text-sm text-muted-foreground">Адрес:</div>
+              <div className="text-sm font-medium">г. Коломна, ул. Октябрьской</div>
+              <div className="text-sm font-medium">революции, д. 181</div>
+            </div>
+
+            <div className="text-center">
+              <div className="text-sm text-muted-foreground">Время работы</div>
+              <div className="text-sm font-medium">Работаем без выходных</div>
+              <div className="text-sm font-medium">с 9:00 до 21:00</div>
+            </div>
+
+            <div className="flex gap-2">
+              <Button size="icon" variant="default" className="rounded-full bg-green-500 hover:bg-green-600">
+                <Icon name="MessageCircle" size={20} />
+              </Button>
+              <Button size="icon" variant="default" className="rounded-full">
+                <Icon name="Send" size={20} />
+              </Button>
+            </div>
+
+            <div className="text-right">
+              <div className="text-lg font-bold">+7 (496) 614-15-15</div>
+              <div className="text-lg font-bold">+7 (926) 025-57-67</div>
+              <button className="text-sm text-primary hover:underline">Перезвоните мне</button>
+            </div>
           </div>
-          <BookingDialog 
-            trigger={<Button>Записаться</Button>}
-            doctors={doctors}
-            services={services}
-          />
         </div>
+
+        <nav className="mt-6 flex justify-center gap-8 text-primary font-medium">
+          <button onClick={() => scrollToSection('hero')} className="hover:text-primary/80 transition-colors">Главная</button>
+          <button onClick={() => scrollToSection('about')} className="hover:text-primary/80 transition-colors">Акции</button>
+          <button onClick={() => scrollToSection('services')} className="hover:text-primary/80 transition-colors">Услуги</button>
+          <button onClick={() => scrollToSection('doctors')} className="hover:text-primary/80 transition-colors">Врачи</button>
+          <button onClick={() => scrollToSection('reviews')} className="hover:text-primary/80 transition-colors">Отзывы</button>
+          <button onClick={() => scrollToSection('licenses')} className="hover:text-primary/80 transition-colors">Лицензии</button>
+          <button onClick={() => scrollToSection('about')} className="hover:text-primary/80 transition-colors">О клинике</button>
+          <button onClick={() => scrollToSection('contacts')} className="hover:text-primary/80 transition-colors">Контакты</button>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 
