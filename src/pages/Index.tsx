@@ -13,33 +13,33 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header scrollToSection={scrollToSection} doctors={doctors} services={services} />
 
-      <section id="hero" className="relative bg-gradient-to-br from-white to-gray-50">
-        <div className="container mx-auto px-6 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+      <section id="hero" className="relative bg-white overflow-hidden">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 items-center min-h-[700px]">
+            <div className="space-y-6 px-12 py-16 z-10">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Лечение и протезирование зубов<br />
                 по Европейским стандартам
               </h1>
-              <p className="text-2xl text-primary font-medium">
+              <p className="text-2xl text-primary font-medium leading-relaxed">
                 Предоставим 2-3 плана качественного<br />
                 лечения под ваш бюджет
               </p>
-              <div className="space-y-4">
-                <p className="text-xl text-foreground">
+              <div className="space-y-5 pt-4">
+                <p className="text-xl text-foreground leading-relaxed">
                   Запишитесь на <span className="text-primary font-semibold">бесплатную</span> первичную<br />
                   консультацию — диагностику зубов
                 </p>
-                <Button size="lg" className="px-8 py-6 text-lg rounded-full">
+                <Button size="lg" className="px-10 py-7 text-lg rounded-full font-medium">
                   Записаться
                 </Button>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative h-full">
               <img 
-                src="https://cdn.poehali.dev/files/e43e4f20-46cd-44f9-a272-8384a189014e.jpg"
+                src="https://cdn.poehali.dev/files/94cd1485-b44e-4309-a28a-9305c8518aab.jpg"
                 alt="Стоматологическое лечение"
-                className="w-full h-auto rounded-3xl shadow-2xl"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>
