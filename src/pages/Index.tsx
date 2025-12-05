@@ -13,31 +13,34 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header scrollToSection={scrollToSection} doctors={doctors} services={services} />
 
-      <section id="hero" className="relative bg-white overflow-hidden">
-        <div className="grid lg:grid-cols-2 items-center min-h-[700px]">
-          <div className="space-y-6 px-12 py-16 z-10 container">
-            <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Лечение и протезирование зубов<br />
-              по Европейским стандартам
-            </h1>
-            <p className="text-2xl text-primary font-medium leading-relaxed">
-              Предоставим 2-3 плана качественного<br />
-              лечения под ваш бюджет
-            </p>
-            <div className="space-y-5 pt-4">
-              <p className="text-xl text-foreground leading-relaxed">
-                Запишитесь на <span className="text-primary font-semibold">бесплатную</span> первичную<br />
-                консультацию — диагностику зубов
+      <section 
+        id="hero" 
+        className="relative overflow-hidden min-h-[700px] bg-cover bg-center"
+        style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/bca9b4b6-073c-4990-8abc-3b2b0f62f24a.jpg)' }}
+      >
+        <div className="absolute inset-0 bg-white/60" />
+        <div className="container mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 items-center min-h-[700px]">
+            <div className="space-y-6 px-12 py-16">
+              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                Лечение и протезирование зубов<br />
+                по Европейским стандартам
+              </h1>
+              <p className="text-2xl text-primary font-medium leading-relaxed">
+                Предоставим 2-3 плана качественного<br />
+                лечения под ваш бюджет
               </p>
-              <Button size="lg" className="px-10 py-7 text-lg rounded-full font-medium">
-                Записаться
-              </Button>
+              <div className="space-y-5 pt-4">
+                <p className="text-xl text-foreground leading-relaxed">
+                  Запишитесь на <span className="text-primary font-semibold">бесплатную</span> первичную<br />
+                  консультацию — диагностику зубов
+                </p>
+                <Button size="lg" className="px-10 py-7 text-lg rounded-full font-medium">
+                  Записаться
+                </Button>
+              </div>
             </div>
           </div>
-          <div 
-            className="relative h-full min-h-[700px] bg-cover bg-center"
-            style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/bca9b4b6-073c-4990-8abc-3b2b0f62f24a.jpg)' }}
-          />
         </div>
       </section>
 
